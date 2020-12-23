@@ -19,7 +19,7 @@ def ORDER(request):
     if request.method == 'GET':
         items = ORDERS.objects.all()
         serializer = ItemSerializer(items, many=True)
-        # print(serializer)
+        print(serializer)
         # print(serializer)
         return Response(serializer.data)
 
